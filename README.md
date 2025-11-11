@@ -1,27 +1,33 @@
 # ProtFlow
 
-## Training
-
-### 1. Environment creation
+## Environment creation
 
 ```
 conda env create -f environment.yaml
 ```
 
-### 2. Compute statistics
+## Training
+
+### 1. Compute statistics
 
 ```
 python -m utils.get_statistics
 python -m utils.stat
 ```
 
-### 3. Decoder training
+### 2. Decoder training
 
 ```
 python train_decoder.py
 ```
 
-### 4. FM holder training
+### 3. Compression module training
+
+```
+python train_compressor.py
+```
+
+### 3. FM holder training
 
 ```
 torchrun --nproc_per_node=1 --master_port=31345  train_flow_matching.py
