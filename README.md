@@ -21,7 +21,7 @@ python -m utils.stat
 python train_decoder.py
 ```
 
-### 4. Diffusion model training
+### 4. FM holder training
 
 ```
 torchrun --nproc_per_node=1 --master_port=31345  train_flow_matching.py
