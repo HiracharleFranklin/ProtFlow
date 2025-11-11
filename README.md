@@ -21,13 +21,13 @@ python -m utils.stat
 python train_decoder.py
 ```
 
-### 3. Compression module training
+### 3. Compression-decompression module training
 
 ```
 python train_compressor.py
 ```
 
-### 3. FM holder training
+### 4. FM holder training
 
 ```
 torchrun --nproc_per_node=1 --master_port=31345  train_flow_matching.py
