@@ -6,6 +6,8 @@
 conda env create -f environment.yaml
 ```
 
+Ensure all paths and hyperparameters in this project are defined according to your specific tasks. Download facebook/esm2_t12_35M_UR50D, Rostlab/prot_t5_xl_uniref50 and Rostlab/prot_t5_xl_half_uniref50-enc from hunggingface and add them at the root folder.
+
 ## Training
 
 ### 1. Compute statistics
