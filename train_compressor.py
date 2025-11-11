@@ -1,7 +1,7 @@
 import os
 import torch.distributed as dist
 
-from compressors.hourglass_train import HourglassProteinCompressionTransformer
+from compressors.hourglass import HourglassProteinCompressionTransformer
 
 from utils.util import set_seed
 
