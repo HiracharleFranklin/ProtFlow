@@ -8,6 +8,10 @@ conda env create -f environment.yaml
 
 Ensure all paths and hyperparameters in this project are defined according to your specific tasks. Download facebook/esm2_t12_35M_UR50D, Rostlab/prot_t5_xl_uniref50 and Rostlab/prot_t5_xl_half_uniref50-enc from hunggingface and add them at the root folder.
 
+## Data Preparation
+
+create a data folder and convert your specific protein sequences into fasta format, and split it into train.fasta and valid.fasta
+
 ## Training
 
 ### 1. Compute statistics
