@@ -132,4 +132,3 @@ dependencies:
       - wcwidth==0.2.13
       - widgetsnbextension==4.0.11
       - yarl==1.9.4
-prefix: /home/kongzitai/mambaforge-pypy3/envs/protflow
