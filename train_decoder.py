@@ -129,10 +129,6 @@ def train(config, encoder, decoder, exp_name):
 
                 writer.add_scalar('Valid/loss', loss.item(), step)
                 writer.add_scalar('Valid/accuracy', acc.item(), step)
-                if acc.item() >= 0.9999:
-                    break
-            if step == 130000: #100
-                break
 
     checkpoints_folder = '' #to be defined
     os.makedirs(checkpoints_folder, exist_ok=True)
