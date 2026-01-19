@@ -55,7 +55,7 @@ def create_config():
     fm.reweight = False
     fm.m = 0.
     fm.s = 1.
-    fm.solver = 'dopri5'
+    fm.solver = '' #to be defined, e.g. euler, rk4, dopri5
     fm.sensitivity = 'adjoint'
     fm.use_mask = False
     config.sampling_step = 25
@@ -119,16 +119,16 @@ def create_config():
     return config
 
 bert_config = BertConfig(**{
-    "hidden_size": 480, #320, 480
+    "hidden_size": 480,
     "hidden_act": "gelu",
     "initializer_range": 0.02,
     "vocab_size": 30522,
     "hidden_dropout_prob": 0.1,
     "num_attention_heads": 16, #16
     "type_vocab_size": 2,
-    "max_position_embeddings": 512, # 1024 for uniref50, 512 for else
-    "num_hidden_layers": 12, #12
-    "intermediate_size": 3072, #3072
+    "max_position_embeddings": 512,
+    "num_hidden_layers": 12,
+    "intermediate_size": 3072,
     "attention_probs_dropout_prob": 0.1,
     "layer_norm_eps": 1e-12,
     "model_type": "bert",
